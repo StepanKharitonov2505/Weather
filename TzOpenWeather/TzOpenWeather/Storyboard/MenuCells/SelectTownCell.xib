@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SelectTownCell" id="gTV-IL-0wX" customClass="SelectTownCell" customModule="TzOpenWeather" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="145" height="58"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="145" height="58"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bPD-CF-RPv">
+                        <rect key="frame" x="5" y="5" width="135" height="48"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NameTown" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJB-be-1Y8">
+                                <rect key="frame" x="10" y="5" width="115" height="38"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.32549019607843138" green="0.52549019607843139" blue="0.87058823529411766" alpha="0.25292322019867547" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZJB-be-1Y8" firstAttribute="leading" secondItem="bPD-CF-RPv" secondAttribute="leading" constant="10" id="VtJ-Pl-swh"/>
+                            <constraint firstAttribute="bottom" secondItem="ZJB-be-1Y8" secondAttribute="bottom" constant="5" id="dvM-dv-vSr"/>
+                            <constraint firstItem="ZJB-be-1Y8" firstAttribute="top" secondItem="bPD-CF-RPv" secondAttribute="top" constant="5" id="lJ4-ak-br5"/>
+                            <constraint firstAttribute="trailing" secondItem="ZJB-be-1Y8" secondAttribute="trailing" constant="10" id="yRp-ks-vwb"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="bPD-CF-RPv" secondAttribute="bottom" constant="5" id="3Us-2C-ALK"/>
+                <constraint firstAttribute="trailing" secondItem="bPD-CF-RPv" secondAttribute="trailing" constant="5" id="7AZ-47-qHe"/>
+                <constraint firstItem="bPD-CF-RPv" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="Yy0-GQ-0j3"/>
+                <constraint firstItem="bPD-CF-RPv" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="aMR-VP-p2I"/>
+            </constraints>
+            <size key="customSize" width="145" height="58"/>
+            <connections>
+                <outlet property="bViewTown" destination="bPD-CF-RPv" id="4Eh-BA-Lzw"/>
+                <outlet property="nameTown" destination="ZJB-be-1Y8" id="O5T-Tw-Ehi"/>
+            </connections>
+            <point key="canvasLocation" x="206.52173913043481" y="102.45535714285714"/>
+        </collectionViewCell>
+    </objects>
+</document>
